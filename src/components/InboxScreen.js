@@ -5,9 +5,9 @@ import TaskList from "./TaskList";
 
 export default function InboxScreen() {
   const dispatch = useDispatch();
-  // We're retrieving the error field from our updated store
+  // We're retrieving the error field from our updated store.
   const { error } = useSelector((state) => state.taskbox);
-  // The useEffect triggers the data fetching when the component is mounted
+  // The useEffect triggers the data fetching when the component is mounted.
   useEffect(() => {
     dispatch(fetchTasks());
   }, []);
@@ -27,7 +27,7 @@ export default function InboxScreen() {
     <div className="page lists-show">
       <nav>
         <h1 className="title-page">
-          <span className="title-wrapper">Taskbox</span>
+          <span className="title-wrapper">Kylebox</span>
         </h1>
       </nav>
       <TaskList />
